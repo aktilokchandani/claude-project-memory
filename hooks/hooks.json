@@ -1,0 +1,32 @@
+{
+  "description": "Project memory: loads the memory rules at session start, logs each prompt to the project's docs/ai/prompts.local.md, flags prompts that name another project's folder, and warns when a session gets too long.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh \"${CLAUDE_PLUGIN_ROOT}/scripts/run.sh\" project_memory rules",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh \"${CLAUDE_PLUGIN_ROOT}/scripts/run.sh\" project_memory log",
+            "timeout": 10
+          },
+          {
+            "type": "command",
+            "command": "sh \"${CLAUDE_PLUGIN_ROOT}/scripts/run.sh\" claude_optimizer hook",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

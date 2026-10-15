@@ -1,0 +1,10 @@
+{
+  "name": "project-memory",
+  "version": "1.0.2",
+  "description": "Per project memory for Claude Code: switch accounts or start a fresh session and continue exactly where you stopped, without re-reading long chats. Auto prompt log, wrong project guard, handoff/resume, and token usage tools.",
+  "author": {
+    "name": "Ashok Kumar"
+  },
+  "license": "MIT",
+  "keywords": ["memory", "handoff", "resume", "tokens", "context", "multi-account", "productivity"]
+}

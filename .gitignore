@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+draft_output/
+docs/ai/*.local.md

@@ -1,0 +1,16 @@
+{
+  "name": "ashok-kumar",
+  "owner": {
+    "name": "Ashok Kumar"
+  },
+  "metadata": {
+    "description": "Claude Code plugins by Ashok Kumar, Software Engineer and AI Engineer, Karachi."
+  },
+  "plugins": [
+    {
+      "name": "project-memory",
+      "source": "./",
+      "description": "Per project memory, handoff/resume across accounts, wrong project guard and token tools."
+    }
+  ]
+}
